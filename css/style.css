@@ -1,13 +1,13 @@
 :root {
   --black: #000;
   --white: #fff;
-  --ink: #2C3E50;
+  --blue: #2C3E50;
   --maxw: 1100px;
 }
 
 body {
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
-  color: var(--ink);
+  color: var(--blue);
   background: var(--white);
   line-height: 1.6;
 }
@@ -132,13 +132,13 @@ body {
   padding: .6rem 1rem;
   font-weight: 600;
   border-radius: .7rem;
-  background: var(--ink);
+  background: var(--blue);
   color: var(--white);
 }
 
 .btn.ghost {
   background: transparent;
-  color: var(--ink);
+  color: var(--blue);
   border: 1px solid rgba(44,62,80,.25);
 }
 
