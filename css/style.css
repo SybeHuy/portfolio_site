@@ -1,13 +1,13 @@
 :root {
   --black: #000;
   --white: #fff;
-  --blue: #2C3E50;
+  --ink: #2C3E50;
   --maxw: 1100px;
 }
 
 body {
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
-  color: var(--blue);
+  color: var(--ink);
   background: var(--white);
   line-height: 1.6;
 }
@@ -25,17 +25,17 @@ body {
   z-index: 50;
 }
 
-.nav {
+.header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: .9rem 0;
 }
 
-.logo {
-  font-weight: 800;
-  letter-spacing: .3px;
-  color: var(--black);
+.logo img {
+  height: 38px;
+  width: auto;
+  display: block;
 }
 
 .menu {
@@ -66,13 +66,13 @@ body {
   color: var(--black);
 }
 
-.hero p.lead {
-  margin-top: .75rem;
+.hero .lead {
   font-size: 1.05rem;
   opacity: .9;
+  margin-top: .75rem;
 }
 
-.hero .photo {
+.photo {
   border-radius: 1rem;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0,0,0,.08);
@@ -88,7 +88,7 @@ body {
   color: var(--black);
 }
 
-.section p.sub {
+.section .sub {
   margin-bottom: 1rem;
   color: #4a5a6b;
 }
@@ -104,12 +104,11 @@ body {
   border: 1px solid rgba(44,62,80,.12);
   border-radius: 1rem;
   overflow: hidden;
-  transition: .2s ease;
 }
 
-.card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 26px rgba(0,0,0,.08);
+.card img {
+  display: block;
+  width: 100%;
 }
 
 .card .content {
@@ -132,13 +131,13 @@ body {
   padding: .6rem 1rem;
   font-weight: 600;
   border-radius: .7rem;
-  background: var(--blue);
+  background: var(--black);
   color: var(--white);
 }
 
 .btn.ghost {
   background: transparent;
-  color: var(--blue);
+  color: var(--ink);
   border: 1px solid rgba(44,62,80,.25);
 }
 
@@ -175,6 +174,7 @@ textarea {
   padding: 2rem 0;
   font-size: .95rem;
   border-top: 1px solid rgba(44,62,80,.1);
+  text-align: left;
 }
 
 .footer .small {
